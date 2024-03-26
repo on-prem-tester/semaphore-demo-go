@@ -4,6 +4,9 @@ agent:
   machine:
     type: s1-myagent
     os_image: ''
+  containers:
+    - name: main
+      image: 'semaphoreci/ubuntu:20.04'
 blocks:
   - name: Build project
     task:
